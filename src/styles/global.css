@@ -1,0 +1,18 @@
+body{
+    background-image: url(https://i.pinimg.com/736x/ac/74/d7/ac74d74d59363396254ef5e1ce877e5b.jpg);
+    color: red
+}
+
+button {
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2023/01/Roberto-Dinamite-do-Vasco-comemorando-gol..jpg.jpg?crop=1&resize=1212,909);
+    
+    background-size: cover;        /* ajusta sem distorcer */
+    background-position: center;   /* centraliza a imagem */
+    background-repeat: no-repeat;  /* evita repetição */
+
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: red
+}
