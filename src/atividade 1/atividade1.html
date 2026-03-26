@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular Preço Final</title>
+</head>
+<body>
+
+    <h2>Calculadora de Preço</h2>
+
+    <label>Custo:</label>
+    <input type="number" id="custo"><br><br>
+
+    <label>% Lucro:</label>
+    <input type="number" id="lucro"><br><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script src="atividade1.js"></script>
+    <script>
+
+        function calcular() {
+            try {
+                const custo = Number(document.getElementById('custo').value);
+                const lucro = Number(document.getElementById('lucro').value);
+
+                const resultado = calculateFinalPrice(custo, lucro);
+
+                document.getElementById('resultado').innerText =
+                    "Preço final: " + resultado.toFixed(2);
+
+            } catch (erro) {
+                document.getElementById('resultado').innerText =
+                    "Erro: " + erro.message;
+            }
+        }
+    </script>
+
+</body>
+</html>
