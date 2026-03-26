@@ -1,0 +1,14 @@
+body {
+    background: #e3eeff;
+    font-family: "Times New Roman", Times, serif;
+}
+
+button {
+    border-radius: 10px;
+    border-color: #e3eeff;
+    background-color: white;
+}
+
+input {
+    border-radius: 10px;
+}

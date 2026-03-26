@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desconto</title>
+</head>
+<body>
+
+<h3>Calcular Desconto</h3>
+
+<input type="number" id="valor" placeholder="Digite o valor">
+<button onclick="calcular()">Calcular</button>
+
+<p id="resultado"></p>
+
+<!-- linkando o JS -->
+<script src="exercicio-02.js"></script>
+
+<script>
+function calcular() {
+    let valor = parseFloat(document.getElementById("valor").value);
+
+    try {
+        let resultado = calculateDiscount(valor);
+        document.getElementById("resultado").innerText =
+            "Valor final: R$ " + resultado.toFixed(2);
+    } catch (erro) {
+        document.getElementById("resultado").innerText = erro.message;
+    }
+}
+</script>
+
+</body>
+</html>
